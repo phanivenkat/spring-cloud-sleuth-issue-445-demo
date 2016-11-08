@@ -13,6 +13,6 @@ import org.springframework.stereotype.Controller;
 public class SomeComponent {
 
     @Autowired
-    ExecutorService service;
+    ExtendedExecutor service;
 
 }

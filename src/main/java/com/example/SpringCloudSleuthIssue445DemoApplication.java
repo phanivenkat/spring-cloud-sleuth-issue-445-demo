@@ -16,7 +16,13 @@ public class SpringCloudSleuthIssue445DemoApplication {
 	}
 
 	@Bean
-	ExecutorService executorService() {
-		return Executors.newSingleThreadExecutor();
+	ExtendedExecutor executorService() {
+		return new ExtendedExecutor() {
+
+			@Override
+			public void execute(Runnable runnable) {
+
+			}
+		};
 	}
 }
